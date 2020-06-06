@@ -52,7 +52,7 @@ public class CustomerController {
 	public String validateParams(@RequestParam("numbers") @Min(value = 3, message = "value cannot be less than 3") 
 														  @Max(value = 10, message = "value cannot be greater than 10")
 														  Integer numbers) {
-		return "success";
+		return "successful deletion";
 	}
 	
 	@PostMapping("/wcis")
